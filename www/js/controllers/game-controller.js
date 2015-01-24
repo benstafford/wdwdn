@@ -5,7 +5,11 @@ wdwdn.controller("GameController", function($scope){
       {'image': 'img/cards/WhoCan_Wolf.jpg'},
       {'image': 'img/cards/Impression_Thinker.jpg'},
       {'image': 'img/cards/FirstTo_Dollar.jpg'},
-      {'image': 'img/cards/5Words_Romance.jpg'}
+      {'image': 'img/cards/5Words_Romance.jpg'},
+      {'image': 'img/cards/5Words_Fired.jpg'},
+      {'image': 'img/cards/Impression_Hula.jpg'},
+      {'image': 'img/cards/Impression_Pants.jpg'},
+      {'image': 'img/cards/WhoCan_Death.jpg'},
     ];
 
   $scope.nextCard = function() {
