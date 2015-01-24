@@ -5,9 +5,14 @@ wdwdn.config(function($stateProvider, $urlRouterProvider) {
   //
   // Now set up the states
   $stateProvider
-  .state('home', {
-    url: "/home",
-    controller: "HomeController",
-    templateUrl: "templates/home.html"
-  });
+    .state('home', {
+      url: "/home",
+      controller: "HomeController",
+      templateUrl: "templates/home.html"
+    })
+    .state('game', {
+      url: "/game",
+      controller: "GameController",
+      temaplateUrl: "templates/game.html"
+    });
 });
