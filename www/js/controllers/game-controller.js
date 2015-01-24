@@ -10,6 +10,10 @@ wdwdn.controller("GameController", function($scope){
       {'image': 'img/cards/Impression_Hula.jpg'},
       {'image': 'img/cards/Impression_Pants.jpg'},
       {'image': 'img/cards/WhoCan_Death.jpg'},
+      {'image': 'img/cards/WhoCan_ABCs.jpg'},
+      {'image': 'img/cards/WhoCan_Pocket.jpg'},
+      {'image': 'img/cards/WhoCan_Rub.jpg'},
+      {'image': 'img/cards/WhoCan_Yell.jpg'},
     ];
 
   $scope.nextCard = function() {
