@@ -36,7 +36,7 @@ body {
 }
 
 /* Portrait layout (default) */
-.app {
+.start-screen {
     position:absolute;             /* position in the center of the screen */
     left:calc(50% - 125px);
     top:50%;
@@ -47,7 +47,7 @@ body {
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
+    .start-screen {
         background-position:left center;
         padding:0px;  /* padding-top + padding-bottom + text area = image height */
         margin:0px;  /* offset vertical: half of image height */
@@ -118,7 +118,30 @@ h1 {
 .button.start-game {
   background-color: green;
 }
+.button.rules {
+  background-color: green;
+}
 .button a {
   color:#FFFFFF;
   text-decoration:none;
+}
+.buttom {
+  float:left;
+}
+.button.bottom {
+  margin: 5px 5px;
+  width: 34%;
+  float: left;
+}
+.button.green {
+  background-color: green;
+}
+#bottom-nav {
+  text-align: center;
+  margin: 0 auto;
+}
+#bottom-nav i {
+  float:left;
+  margin-top: 5px;
+  margin-left: 3px;
 }

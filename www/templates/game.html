@@ -1,3 +1,12 @@
-<div>
-  <h1>CARD IMAGE</h1>
+<div style="text-align:center">
+  <img src="{{ currentCard.image }}" height="518px" width="320px">
+</div>
+<div id="bottom-nav">
+  <div class="button bottom green skip">
+    Skip
+  </div>
+  <div class="button bottom green next">
+    <a ng-click="nextCard()">Next</a>
+  </div>
+  <i class="fa fa-cog fa-3x"></i>
 </div>

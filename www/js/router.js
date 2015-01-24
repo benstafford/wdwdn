@@ -13,6 +13,6 @@ wdwdn.config(function($stateProvider, $urlRouterProvider) {
     .state('game', {
       url: "/game",
       controller: "GameController",
-      temaplateUrl: "templates/game.html"
+      templateUrl: "templates/game.html"
     });
 });
