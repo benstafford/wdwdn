@@ -1,8 +1,13 @@
-wdwdn.config(function ($stateProvider, $urlRouterProvider){
-  $stateProvider.state({
-    name: "home",
+wdwdn.config(function($stateProvider, $urlRouterProvider) {
+  //
+  // For any unmatched url, redirect to /state1
+  $urlRouterProvider.otherwise("/home");
+  //
+  // Now set up the states
+  $stateProvider
+  .state('home', {
     url: "/home",
-    templateUrl: "mobilehome.html"
-    controller: "HomeController"
-  })
+    controller: "HomeController",
+    templateUrl: "templates/home.html"
+  });
 });

@@ -1,2 +1,2 @@
 'use strict';
-var web = angular.module("wdwdn");
+var wdwdn = angular.module("wdwdn", ['ui.router']);
