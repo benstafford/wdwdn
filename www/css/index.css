@@ -35,6 +35,11 @@ body {
     width:100%;
 }
 
+.app {
+  width: 100%;
+  height: 100%;
+}
+
 /* Portrait layout (default) */
 .start-screen {
     position:absolute;             /* position in the center of the screen */
@@ -100,7 +105,7 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.button {
+.button, button {
   height: 15px;
   border-radius:4px;
   -webkit-border-radius:4px;
@@ -152,4 +157,35 @@ h1 {
   float:left;
   margin-top: 5px;
   margin-left: 3px;
+}
+#rules-container {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  margin: 50px auto;
+}
+#rules {
+  background-color: white;
+  width: 80%;
+  height: 450px;
+  top: 5%;
+  z-index: 10;
+  position: absolute;
+  overflow: scroll;
+  padding: 5px;
+}
+#rules em {
+  text-decoration: underline;
+}
+#rules em, p {
+  text-transform: none;
+}
+#rules a  {
+  text-decoration: underline;
+}
+#rules-container .fa {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  z-index:15;
 }

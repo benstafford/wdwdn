@@ -8,6 +8,59 @@
     <a ui-sref="game">Start</a>
   </div>
   <div class="button rules received">
-    <a ui-sref="rules">Rules</a>
+    <a ng-click="rulesOn()">Rules</a>
+  </div>
+</div>
+
+<div ng-show="showRules" id="rules-container">
+  <i class="fa fa-times fa-2x" ng-click="rulesOff()"></i>
+  <div id="rules">
+    <h2>Do What?! Rules</h2>
+
+    <p>
+      <em>Starting the Game:</em>
+      You start by choosing the Great Decider, also known as the judge. To choose the first Great Decider,
+      everyone rolls a die (make sure everyone uses the same amount of sides on a die, preferably d6,
+      roll for ties). The Great Decider is the highest roller. If you don’t have a die of any kind,
+      the youngest is the Great Decider.
+    </p>
+
+    <p>
+      <em>Gameplay:</em>
+        Once the Great Decider has been chosen, they can draw a card from the app (tap Start) or the
+        physical deck (whichever version you are using). Then, the Great Decider must choose whether
+        to skip the card and draw a new one or keep it. If he/she keeps the card, they must read the
+        card out loud to the other players, and show it to them. The players should try their best to
+        follow the instructions on the card in order to impress the Great Decider. The Great Decider
+        awards a point to the person that can do it the fastest, best, or most amusingly. Finally, the
+        player to the left of the Great Decider becomes the Great Decider, and the next turn begins. Tap
+        Next and pass the device to the next Great Decider if you’re playing with the app.
+        (In case you were wondering, the old Great Decider loses the role of Great Decider.)
+    </p>
+
+    <p>
+      <em>The Difference Between “All Together” and “One at a Time”:</em>
+      When you draw an All Together card, everyone does what the card tells them to do when the Great
+      Decider says “Go.” When you draw a One at a Time card, every player has 20 seconds to come up with
+      a response, then, starting with the person to the left of the Great Decider, people will share their
+      responses in a clockwise fashion.
+    </p>
+
+    <p>
+      <em>Winning:</em>
+      To win, you must be the first get to 8 points with 3-5 players, or 10 points with 6-10 players.
+    </p>
+
+    <p>
+      <em>Expansions:</em>
+        If you randomly have a d6 lying around, or a bunch of meeples, there are cards for things to
+        do with the die and the meeples. Also, if you have an odd number of players (including the Great
+        Decider) that is at least 5, you can use Pick a Partner cards, where the non-judges form
+        partnerships to complete the card. When a partnership wins, both partners get a point.
+    </p>
+
+    <p>
+      <a ng-click="rulesOff()" class="close">Close Rules</a>
+    </p>
   </div>
 </div>

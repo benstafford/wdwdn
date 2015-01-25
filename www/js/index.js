@@ -46,6 +46,12 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+
+
 };
 
 app.initialize();
+
+function toggleDiv(divId) {
+  $("#"+divId).toggle();
+}
