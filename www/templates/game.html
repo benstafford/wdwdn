@@ -3,13 +3,9 @@
     <img src="{{ currentCard.image }}" height="518px" width="320px">
   </div>
   <div id="bottom-nav">
-    <div class="button bottom green skip">
-      <a ng-click="nextCard()">Next</a>
-    </div>
-    <div class="button bottom green next">
-      Score
-    </div>
-    <i class="fa fa-cog fa-3x"></i>
+    <button class="button bottom green skip" ng-click="nextCard()">Next</button>
+    <button class="button bottom green next">Score</button>
+    <i class="fa fa-cog fa-3x" style="float:right; margin-right:15px;"></i>
   </div>
 </div>
 <div ng-show="cardsEmpty">

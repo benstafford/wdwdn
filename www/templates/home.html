@@ -4,12 +4,8 @@
   <div class="button listening">
     Loading...
   </div>
-  <div class="button start-game received">
-    <a ui-sref="game">Start</a>
-  </div>
-  <div class="button rules received">
-    <a ng-click="rulesOn()">Rules</a>
-  </div>
+  <button class="button start-game received" ui-sref="game">Start</button>
+  <button class="button rules received" ng-click="rulesOn()">Rules</button>
 </div>
 
 <div ng-show="showRules" id="rules-container">
