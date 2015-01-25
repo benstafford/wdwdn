@@ -17,9 +17,12 @@ wdwdn.controller("GameController", function($scope){
     ];
 
   $scope.nextCard = function() {
-    //TODO when gameCards.length == 0
-    $scope.currentCard = $scope.gameCards[0]
-    $scope.gameCards.splice(0,1);
+    if ($scope.gameCards.length == 0) {
+      $scope.cardsEmpty = true
+    } else {
+      $scope.currentCard = $scope.gameCards[0]
+      $scope.gameCards.splice(0,1);
+    }
   };
 
   $scope.shuffle = function(o){ //v1.0
@@ -27,6 +30,13 @@ wdwdn.controller("GameController", function($scope){
     return o;
   };
 
-  $scope.gameCards = $scope.shuffle($scope.cards);
+  $scope.resetCards = function() {
+    $scope.gameCards = angular.copy($scope.shuffle($scope.cards));
+    $scope.cardsEmpty = false
+    $scope.nextCard();
+  }
+
+  $scope.gameCards = angular.copy($scope.shuffle($scope.cards));
+  $scope.cardsEmpty = false
   $scope.nextCard();
 });

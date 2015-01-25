@@ -1,12 +1,20 @@
-<div style="text-align:center">
-  <img src="{{ currentCard.image }}" height="518px" width="320px">
+<div ng-show="!cardsEmpty">
+  <div style="text-align:center">
+    <img src="{{ currentCard.image }}" height="518px" width="320px">
+  </div>
+  <div id="bottom-nav">
+    <div class="button bottom green skip">
+      <a ng-click="nextCard()">Next</a>
+    </div>
+    <div class="button bottom green next">
+      Score
+    </div>
+    <i class="fa fa-cog fa-3x"></i>
+  </div>
 </div>
-<div id="bottom-nav">
-  <div class="button bottom green skip">
-    <a ng-click="nextCard()">Next</a>
+<div ng-show="cardsEmpty">
+  <div id="cards-out">
+    <h2>Oh no!  You've played through all of the cards!</h2>
+    <button ng-click="resetCards()">Start Over</button>
   </div>
-  <div class="button bottom green next">
-    Score
-  </div>
-  <i class="fa fa-cog fa-3x"></i>
 </div>

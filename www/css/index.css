@@ -188,3 +188,17 @@ h1 {
   right: 13px;
   z-index:15;
 }
+#cards-out {
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  top: 25%;
+  left: calc(50% - 125px);
+}
+#cards-out button {
+  background-color: green;
+  border: none;
+  height: 35px;
+  padding: 5px 30px;
+}
