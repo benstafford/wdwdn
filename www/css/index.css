@@ -44,7 +44,7 @@ body {
 .start-screen {
     position:absolute;             /* position in the center of the screen */
     left:calc(50% - 144px);
-    top:35%;
+    top:15%;
     height:50px;                   /* text area height */
     width:288px;                   /* text area width */
     text-align:center;
