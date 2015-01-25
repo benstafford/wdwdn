@@ -152,8 +152,7 @@ button {
 .button.bottom {
   height: 35px;
   margin: 5px 5px;
-  width: 34%;
-  float: left;
+  width: 60%;
 }
 .button.green {
   background-color: green;
@@ -204,4 +203,9 @@ button {
   margin: 0 auto;
   top: 25%;
   left: calc(50% - 125px);
+}
+#cards-out button {
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  color:#FFFFFF;
 }

@@ -4,13 +4,11 @@
   </div>
   <div id="bottom-nav">
     <button class="button bottom green skip" ng-click="nextCard()">Next</button>
-    <button class="button bottom green next">Score</button>
-    <i class="fa fa-cog fa-3x" style="float:right; margin-right:15px;"></i>
   </div>
 </div>
 <div ng-show="cardsEmpty">
   <div id="cards-out">
     <h2>Oh no!  You've played through all of the cards!</h2>
-    <button ng-click="resetCards()">Start Over</button>
+    <button ng-click="resetCards()" class"button green">Start Over</button>
   </div>
 </div>
